@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Light/Dark Mode Example'),
+        title: Text('Light/Dark Mode'),
       ),
       body: Center(
         child: Consumer<ThemeModeProvider>(
