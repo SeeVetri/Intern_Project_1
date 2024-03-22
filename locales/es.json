@@ -1,0 +1,17 @@
+{
+  "login": "Iniciar sesión",
+  "signup": "Inscribirse",
+  "home_page": "Página de inicio",
+  "register": "Registrarse",
+  "title": "pasantía",
+  "email_hint": "Correo electrónico",
+  "password_hint": "Contraseña",
+  "forgot_password": "¿Olvidaste tu contraseña?",
+  "login_successful": "Inicio de sesión exitoso",
+  "incorrect_credentials": "Correo electrónico o contraseña incorrectos.",
+  "error_generic": "Error: %@",
+  "error_default": "Se produjo un error.",
+  "first_name": "Nombre",
+  "last_name": "Apellido",
+  "confirm_password": "Confirmar contraseña"
+}
