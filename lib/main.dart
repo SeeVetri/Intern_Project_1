@@ -1,6 +1,6 @@
-import 'package:demo_project/theme_mode_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:demo_project/theme_mode_provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -37,11 +37,26 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: Consumer<ThemeModeProvider>(
           builder: (context, themeModeProvider, _) {
-            return ElevatedButton(
-              onPressed: () {
-                themeModeProvider.toggleTheme();
-              },
-              child: Text('Toggle Theme'),
+            IconData iconData = themeModeProvider.themeMode == ThemeModeType.light
+                ? Icons.wb_sunny
+                : Icons.nightlight_round;
+            String text = themeModeProvider.themeMode == ThemeModeType.light
+                ? 'Light'
+                : 'Dark';
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(iconData, size: 50), // Display moon or sun icon
+                SizedBox(height: 20),
+                Text(text, style: TextStyle(fontSize: 20)), // Display "Dark" or "Light" text
+                SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    themeModeProvider.toggleTheme();
+                  },
+                  child: Text('Toggle Theme'),
+                ),
+              ],
             );
           },
         ),
