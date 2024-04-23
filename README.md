@@ -8,7 +8,7 @@ Welcome to our Flutter intern project! Below are the main tasks outlined for you
 # Main Page
 The main page serves as the entry point to our application. It should provide a professional and engaging interface to attract users.
 
-
+![Flutter Logo](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Main_Page.jpg)
 
 # Login Page
 The login page allows users to securely access their accounts. It should have a sleek design and intuitive user experience.
