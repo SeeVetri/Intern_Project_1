@@ -71,29 +71,42 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
-              },
-              child: Text(LocalizationService.instance.getString('login')), // Localized button text
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.asset(
+              Theme.of(context).brightness == Brightness.light
+                  ? 'assets/background_light.jpg'
+                  : 'assets/background_dark.jpg',
+              fit: BoxFit.cover,
             ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage()));
-              },
-              child: Text(LocalizationService.instance.getString('register')), // Localized button text
+          ),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                  },
+                  child: Text(LocalizationService.instance.getString('login')), // Localized button text
+                ),
+                SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage()));
+                  },
+                  child: Text(LocalizationService.instance.getString('register')), // Localized button text
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
 }
+
 
 class LanguageDropdown extends StatefulWidget {
   @override
@@ -117,8 +130,8 @@ class _LanguageDropdownState extends State<LanguageDropdown> {
               case 'English':
                 LocalizationService.instance.loadLanguage('en');
                 break;
-              case 'Spanish':
-                LocalizationService.instance.loadLanguage('es');
+              case 'Malay':
+                LocalizationService.instance.loadLanguage('ml');
                 break;
             // Add cases for other languages
             }
@@ -126,7 +139,7 @@ class _LanguageDropdownState extends State<LanguageDropdown> {
             Navigator.popAndPushNamed(context, '/');
           });
         },
-        items: <String>['English', 'Spanish'] // Add other language options here
+        items: <String>['English', 'Malay'] // Add other language options here
             .map<DropdownMenuItem<String>>((String value) {
           return DropdownMenuItem<String>(
             value: value,

@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
       textInputAction: TextInputAction.done,
       onFieldSubmitted: (_) {
         FocusScope.of(context).unfocus();
-        _submit();
+        _submit(context);
       },
       decoration: InputDecoration(
         hintText: LocalizationService.instance.getString('password_hint'),
@@ -95,7 +95,9 @@ class _LoginPageState extends State<LoginPage> {
           ),
           backgroundColor: Colors.lightBlueAccent,
         ),
-        onPressed: _submit,
+        onPressed: () {
+          _submit(context); // Pass the context to _submit function
+        },
         child: Text(LocalizationService.instance.getString('login'), style: TextStyle(color: Colors.white)),
       ),
     );
@@ -178,12 +180,12 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  void _submit() {
+  void _submit(BuildContext context) {
     if (_formKey.currentState!.validate()) {
       signIn(emailController.text, passwordController.text)
           .then((_) {
         // Successful login
-        showSnackBar('Login successful');
+        showSnackBar(context, LocalizationService.instance.getString('login_successful'));
         Future.delayed(Duration(seconds: 2), () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
         });
@@ -194,13 +196,13 @@ class _LoginPageState extends State<LoginPage> {
           print('Error code: ${error.code}'); // Print error code for debugging
           switch (error.code) {
             case 'invalid-credential':
-              showSnackBar('Incorrect email or password.');
+              showSnackBar(context, 'Incorrect email or password.');
               break;
             default:
-              showSnackBar('Error: ${error.message}');
+              showSnackBar(context, 'Error: ${error.message}');
           }
         } else {
-          showSnackBar('Error: $error');
+          showSnackBar(context, 'Error: $error');
         }
       });
     }
@@ -211,7 +213,11 @@ class _LoginPageState extends State<LoginPage> {
         email: email, password: password);
   }
 
-  void showSnackBar(String message) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
+  void showSnackBar(BuildContext context, String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(message),
+      ),
+    );
   }
 }

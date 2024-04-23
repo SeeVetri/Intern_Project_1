@@ -1,0 +1,17 @@
+{
+  "login": "Log Masuk",
+  "signup": "Daftar",
+  "home_page": "Laman Utama",
+  "register": "Daftar",
+  "title": "latihan industri",
+  "email_hint": "Emel",
+  "password_hint": "Kata Laluan",
+  "forgot_password": "Lupa Kata Laluan?",
+  "login_successful": "Log Masuk Berjaya",
+  "incorrect_credentials": "Emel atau kata laluan tidak betul.",
+  "error_generic": "Ralat: %@",
+  "error_default": "Ralat berlaku.",
+  "first_name": "Nama Pertama",
+  "last_name": "Nama Akhir",
+  "confirm_password": "Sahkan Kata Laluan"
+}

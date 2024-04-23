@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
       ),
     );
 
-    final languages = ['English', 'Spanish', 'French']; // List of supported languages
+    final languages = ['English', 'Malay', 'Chinese']; // List of supported languages
 
     final languageDropdown = DropdownButton<String>(
       value: _selectedLanguage,
@@ -151,12 +151,15 @@ class _HomePageState extends State<HomePage> {
   String _getLoremIpsumText() {
     // Return Lorem ipsum text based on the selected language
     switch (_selectedLanguage) {
-      case 'Spanish':
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit condimentum mauris id tempor. Praesent eu commodo lacus. Praesent eget mi sed libero eleifend tempor. Sed at fringilla ipsum. Duis malesuada feugiat urna vitae convallis. Aliquam eu libero arcu.';
-      case 'French':
-        return ' ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit condimentum mauris id tempor. Praesent eu commodo lacus. Praesent eget mi sed libero eleifend tempor. Sed at fringilla ipsum. Duis malesuada feugiat urna vitae convallis. Aliquam eu libero arcu.';
-      default:
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit condimentum mauris id tempor. Praesent eu commodo lacus. Praesent eget mi sed libero eleifend tempor. Sed at fringilla ipsum. Duis malesuada feugiat urna vitae convallis. Aliquam eu libero arcu.';
+      case 'Malay':
+        return 'Hey! Nama saya Seemon, peminat Flutter yang bersemangat dan pelajar di MSU. Dengan kebolehan untuk inovasi dan keinginan untuk belajar, saya menyertai pasukan AQ Wise sebagai pembangun pelatih, bersedia untuk mencipta gelombang dalam dunia pembangunan aplikasi.'
+            'Didorong oleh keinginan untuk meneroka ufuk baharu dan berbekalkan asas yang kukuh dalam kejuruteraan perisian.';
+      case 'Chinese':
+        return '嘿！我叫 Seemon，是一位熱情的 Flutter 愛好者，也是密西根州立大學的學生。憑藉創新的訣竅和學習的渴望，我作為實習開發人員加入 AQ Wise 團隊，準備在應用程式開發領域掀起波瀾。'
+            '在探索新視野的願望的驅使下，並憑藉紮實的軟體工程基礎，我為該專案帶來了新鮮的想法和獨特的視角。';
+     default:
+        return 'Hey there! My name is Seemon, a passionate Flutter enthusiast and a student at MSU. With a knack for innovation and a hunger to learn, I joins AQ Wise team as an intern developer, ready to make waves in the '
+            'world of app development.Driven by a desire to explore new horizons and armed with a solid foundation in software engineering, I brings fresh ideas and a unique perspective to the project.';
     }
   }
 }
