@@ -31,9 +31,9 @@ The login page allows users to securely access their accounts. It should have a 
 # LOCALIZATION PAGE
 The login page allows users to securely access their accounts. It should have a sleek design and intuitive user experience.
 
-| Localization ( Malay )                                                                          | Localization ( Selection )                                                                                |
-|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| ![Screenshot 1](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/H_P_Malay.jpg) | ![Screenshot 2](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/languange_Selection.jpg) |
+| Localization ( Malay )                                                                          | Localization ( Selection )                                                                               |
+|-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| ![Screenshot 1](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/H_P_Malay.jpg) | ![Screenshot 2](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Language_Selection.jpg) |
 
 # Visual Enhancements
 Include relevant photos and graphics to enhance the visual appeal of the README.md file. This helps to provide a clear representation of the project's objectives and aesthetic.
