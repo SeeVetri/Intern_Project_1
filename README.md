@@ -27,6 +27,14 @@ The login page allows users to securely access their accounts. It should have a 
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | ![Screenshot 3](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Dark_Mode_SignUp_Page.jpg) | ![Screenshot 4](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Dark_Mode_Home_Page.jpg) |
 
+
+# DARK MODE PAGE
+The login page allows users to securely access their accounts. It should have a sleek design and intuitive user experience.
+
+| Localization ( Malay )                                                                          | Localization ( Chinese )                                                                                   |
+|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| ![Screenshot 1](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/H_P_Malay.jpg) | ![Screenshot 2](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Dark_Mode_Login_Page.jpg) |
+
 # Visual Enhancements
 Include relevant photos and graphics to enhance the visual appeal of the README.md file. This helps to provide a clear representation of the project's objectives and aesthetic.
 
