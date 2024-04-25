@@ -8,13 +8,13 @@ Welcome to our Flutter intern project! Below are the main tasks outlined for you
 # LIGHT MODE PAGE
 The main page serves as the entry point to our application. It should provide a professional and engaging interface to attract users.
 
-| Main Page                                                                                                  | Login Page                                                                                                 |
-|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| ![Screenshot 1](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Light_Mode_Main_Page.jpg) | ![Screenshot 2](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Dark_Mode_Login_Page.jpg) |
+| Main Page                                                                                                  | Login Page                                                                                                  |
+|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| ![Screenshot 1](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Light_Mode_Main_Page.jpg) | ![Screenshot 2](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Light_Mode_Login_Page.jpg) |
 
-| Sign Up Page                                                                                                 | Home Page                                                                                                 |
-|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| ![Screenshot 3](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Light_Mode_SignUp_Page.jpg) | ![Screenshot 4](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Dark_Mode_Home_Page.jpg) |
+| Sign Up Page                                                                                                 | Home Page                                                                                                  |
+|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| ![Screenshot 3](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Light_Mode_SignUp_Page.jpg) | ![Screenshot 4](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Light_Mode_Home_Page.jpg) |
 
 # DARK MODE PAGE
 The login page allows users to securely access their accounts. It should have a sleek design and intuitive user experience.
