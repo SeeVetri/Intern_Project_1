@@ -28,7 +28,7 @@ The login page allows users to securely access their accounts. It should have a 
 | ![Screenshot 3](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Dark_Mode_SignUp_Page.jpg) | ![Screenshot 4](https://github.com/SeeVetri/demo_project/blob/master/Screenshots/Dark_Mode_Home_Page.jpg) |
 
 
-# DARK MODE PAGE
+# LOCALIZATION PAGE
 The login page allows users to securely access their accounts. It should have a sleek design and intuitive user experience.
 
 | Localization ( Malay )                                                                          | Localization ( Chinese )                                                                                   |
